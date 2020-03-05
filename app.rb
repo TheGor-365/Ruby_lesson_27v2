@@ -4,6 +4,17 @@ require 'sinatra/reloader'
 require 'pony'
 # require 'sqlite3'
 
+# def is_barber_exists? db, name
+#   db.execute('select * from Barbers where name =?' [name]).length > 0
+# end
+#
+# def seet_db db, barbers
+#   barbers.each do |barber|
+#     if is_barber_exists? db, barber
+#       db.execute 'insert into Barbers (name) values (?)', [barber]
+#   end
+# end
+
 # def get_db
 #   return SQLlite3::Database.new 'users.sqlite'
 # db.results_as_hash = true
@@ -21,6 +32,13 @@ require 'pony'
 #       "barber" TEXT,
 #       "color" TEXT
 #     )'
+
+# db.execute 'CREATE TABLE IF NOT EXIST
+#   "Barbers" (
+#     "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+#     "name" TEXT
+#     )'
+seet_db db, ['Jessie Pincman', 'Walter White', 'Gus Fring', 'Mike Ehrmantraut']
 # end
 
 get '/about' do
