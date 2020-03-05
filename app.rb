@@ -4,6 +4,12 @@ require 'sinatra/reloader'
 require 'pony'
 # require 'sqlite3'
 
+# def get_db
+#   return SQLlite3::Database.new 'users.sqlite'
+# db.results_as_hash = true
+# return db
+# end
+
 # configure do
 #   db = get_db 'barbershop.db'
 #   db.execute 'CREATE TABLE IF NOT EXISTS
@@ -147,9 +153,3 @@ end
 get '/showusers' do
   erb "Users"
 end
-
-# def get_db
-#   return SQLlite3::Database.new 'users.sqlite'
-# db.results_as_hash = true
-# return db
-# end
