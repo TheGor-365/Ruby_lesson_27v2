@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Barber Shop</title>
+  </head>
+  <body>
+
+    <table class="table thead-dark table-bordered">
+      <thead>
+        <tr>
+          <th scope="col"><strong>Name</strong></th>
+          <th scope="col"><strong>Phone</strong></th>
+          <th scope="col"><strong>Date and time</strong></th>
+          <th scope="col"><strong>Barber name</strong></th>
+          <th scope="col"><strong>Color</strong></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @results.each do |row| %>
+        <tr>
+          <td scope="col"><%= row['username'] %></td>
+          <td scope="col"><%= row['phone'] %></td>
+          <td scope="col"><%= row['datestamp'] %></td>
+          <td scope="col"><%= row['barber'] %></td>
+          <td scope="col"><%= row['color'] %></td>
+        </tr>
+        <% end %>
+      </tbody>
+
+    </table>
+  </body>
+</html>
