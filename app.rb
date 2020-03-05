@@ -151,5 +151,5 @@ post '/contacts' do
 end
 
 get '/showusers' do
-  erb "Users"
+  erb :showusers
 end
