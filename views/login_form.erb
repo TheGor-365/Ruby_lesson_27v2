@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Barber Shop</title>
+  </head>
+  <body>
+    <h1>Enter to administration zone</h1>
+
+    <form action='/login/form' method='post' class="form-group">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Login</label>
+        <input value="<%= @login %>" type="text" name="login" class="form-control" id="exampleInputEmail1" placeholder="Input your login" autofocus>
+        <small class="form-text text-muted">We using coocies.</small>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input value="<%= @password %>" type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Input your password" autofocus>
+      </div>
+
+      <button type="submit" class="btn btn-primary" value="log in">Submit</button>
+    </form>
+
+  </body>
+</html>

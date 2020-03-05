@@ -1,0 +1,16 @@
+Comment: asdf
+Mail - 9262577685@mail.ru:
+Comment: asdf
+Mail - 9262577685@mail.ru:
+Comment: asdf
+Mail - 7495500@gmail.com:
+Comment: Hello Barber Shop
+Mail - gurgenetoya@gmail.com:
+Comment: I want new style!!
+
+Mail - gurgenetoya@gmail.com:
+Comment: Right now
+
+Name: Gor, email: | 7495500@gmail.com |
+Comment body: My first email in sinatra!
+
