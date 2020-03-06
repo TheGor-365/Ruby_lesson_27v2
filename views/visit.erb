@@ -53,6 +53,10 @@
         <option <%= @barber == 'Gus Fring' ? 'selected' : '' %> >Gus Fring</option>
       </select>
 
+      <%# <% @barbers.each do |item| %>
+        <option <%= @barber == item['name'] ? 'selected' : '' %>><%= item['name'] %></option>
+      <% end %> %>
+
       <br><br>
 
       <div class="form-group">

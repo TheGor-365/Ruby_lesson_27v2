@@ -15,6 +15,11 @@ require 'pony'
 #   end
 # end
 
+# before do
+#   db = get_db
+#   @barbers = db.execute 'select * from Barbers'
+# end
+
 # def get_db
 #   return SQLlite3::Database.new 'users.sqlite'
 # db.results_as_hash = true
@@ -38,7 +43,7 @@ require 'pony'
 #     "id" INTEGER PRIMARY KEY AUTOINCREMENT,
 #     "name" TEXT
 #     )'
-seet_db db, ['Jessie Pincman', 'Walter White', 'Gus Fring', 'Mike Ehrmantraut']
+# seet_db db, ['Jessie Pincman', 'Walter White', 'Gus Fring', 'Mike Ehrmantraut']
 # end
 
 get '/about' do
