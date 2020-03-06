@@ -60,6 +60,9 @@
             <li class="nav-item active">
               <a class="nav-link" href="/visit">Visit </a>
             </li>
+            <li>
+              <a class="nav-link" href="/showusers">Visiters list</a>
+            </li>
             <li class="nav-item active">
               <a class="nav-link" href="/contacts">Contacts </a>
             </li>
@@ -81,7 +84,7 @@
 			</nav>
 
 			<div>
-				<%if @error then %>
+				<%if @error && @error.length > 0 then %>
 						<div class="alert alert-danger"><%=@error%></div>
 				<% end %>
 				<%= yield %>
